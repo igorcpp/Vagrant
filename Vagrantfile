@@ -2,25 +2,25 @@ Vagrant.configure("2") do |config|
     servers=[
         {
           :hostname => "control",
-          :box => "bento/ubuntu-18.04",
+          :box => "ubuntu/bionic64",
           :ip => "192.168.48.1",
           :ssh_port => '2200'
         },
         {
           :hostname => "node1",
-          :box => "bento/ubuntu-18.04",
+          :box => "ubuntu/bionic64",
           :ip => "192.168.48.10",
           :ssh_port => '2201'
         },
         {
           :hostname => "node2",
-          :box => "bento/ubuntu-18.04",
+          :box => "ubuntu/bionic64",
           :ip => "192.168.48.20",
           :ssh_port => '2202'
         },
         {
           :hostname => "node3",
-          :box => "bento/ubuntu-18.04",
+          :box => "ubuntu/bionic64",
           :ip => "192.168.48.30",
           :ssh_port => '2203'
         }
