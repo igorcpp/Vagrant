@@ -1,15 +1,19 @@
 vagrant -h
 
+# Creating a VM
+-- Initialize Vagrant with a Vagrantfile and
+- `vagrant init`
+
 vagrant init
 
 vagrant init ubuntu/trusty64
 
 vagrant up
-- возобновить машину из паузы, можно и vagrant up
-  vagrant resume
+
+vagrant resume
   
-vagrant provision -- forces reprovisioning of the vagrant machine
-vagrant reload -- restarts vagrant machine, loads new Vagrantfile configuration
+vagrant provision -- forces 
+vagrant reload -- restarts 
 vagrant reload --provision -- restart the virtual machine and force provisioning
 Getting into a VM
 vagrant ssh -- connects to machine via SSH
