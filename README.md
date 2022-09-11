@@ -1,10 +1,8 @@
-list of all available commands
-  vagrant
+vagrant -h
 
-Creating a VM
-- инициализировать
-  vagrant init
-  vagrant init ubuntu/trusty64
+vagrant init
+
+vagrant init ubuntu/trusty64
   
 Starting a VM
   vagrant up
