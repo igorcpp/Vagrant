@@ -1,10 +1,10 @@
 vagrant -h
 
 vagrant init
+
 vagrant init ubuntu/trusty64
-  
-Starting a VM
-  vagrant up
+
+vagrant up
 - возобновить машину из паузы, можно и vagrant up
   vagrant resume
   
