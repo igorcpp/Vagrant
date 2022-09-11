@@ -1,0 +1,40 @@
+- помощь
+	vagrant -h
+	
+- инициализровать с Vagrantfile и в текущей дериктории
+	vagrant init
+	
+- инициализировать с образом - будет создан Vagrantfile
+	vagrant up 
+	vagrant resume
+	
+- форсировать репровизию машины
+	vagrant provision
+	
+- перезагрузить машину - перечитать Vagrantfile - т.е новые настройки вступят в силу
+	vagrant reload
+	
+- перезагрузить машину и форсировать провизию
+	vagrant reload --provision
+
+- войти по ssh
+	vagrant ssh <boxname>
+
+- выключить виртуалки
+	vagrant halt
+	
+- приостановить
+	vagrant suspend
+
+- показать какие боксы установлены
+	vagrant box list
+
+- загрузить box на локальный пк
+	vagrant box add <name> <url>
+	
+- проверить обновления для боксов
+	vagrant box outdated
+	
+- удалить бокс с локального пк
+	vagrant box remove almalinux/8
+	vagrant box remove almalinux/8 --provider vmware_desktop
