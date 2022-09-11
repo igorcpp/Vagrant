@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
         {
           :hostname => "control",
           :box => "ubuntu/bionic64",
-          :ip => "192.168.48.1",
+          :ip => "192.168.48.254",
           :ssh_port => '2200'
         },
         {
@@ -31,7 +31,6 @@ Vagrant.configure("2") do |config|
             node.vm.box = machine[:box]
             node.vm.hostname = machine[:hostname]
             node.vm.network :private_network, ip: machine[:ip]
-            node.vm.network "forwarded_port", guest: 22, host: machine[:ssh_port], id: "ssh"
             node.vm.provider :virtualbox do |vb|
                 vb.customize ["modifyvm", :id, "--memory", 512]
                 vb.customize ["modifyvm", :id, "--cpus", 1]
