@@ -1,8 +1,8 @@
 vagrant -h
 
-# Creating a VM
--- Initialize Vagrant with a Vagrantfile and
-- `vagrant init`
+## Creating a VM
+###Initialize Vagrant with a Vagrantfile and
+  - `vagrant init`
 
 vagrant init
 
