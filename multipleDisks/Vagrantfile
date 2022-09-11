@@ -3,7 +3,7 @@ Vagrant.configure(2) do |config|
   config.vm.hostname = "m8alma"
   config.vm.define "m8alma" do |d|
     d.vm.provider "virtualbox" do |vb|
-      vb.name = "m8alma"
+      vb.name = "multi-disk"
       vb.linked_clone = true
       (1..6).each do |n|
         disk_file = "./.vagrant/machines/disks/m8alma-disk-d#{n}.vdi"
