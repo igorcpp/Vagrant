@@ -1,13 +1,13 @@
-Typing vagrant from the command line will display a list of all available commands.
-+++++++++++++++++++++++++++++++
-Be sure that you are in the same directory as the Vagrantfile when running these commands!
+vagrant -h
 
-Creating a VM
-vagrant init -- Initialize Vagrant with a Vagrantfile and ./.vagrant directory, using no specified base image. Before you can do vagrant up, you'll need to specify a base image in the Vagrantfile.
-vagrant init <boxpath> -- Initialize Vagrant with a specific box. To find a box, go to the public Vagrant box catalog. When you find one you like, just replace it's name with boxpath. For example, vagrant init ubuntu/trusty64.
-Starting a VM
-vagrant up -- starts vagrant environment (also provisions only on the FIRST vagrant up)
-vagrant resume -- resume a suspended machine (vagrant up works just fine for this as well)
+vagrant init
+
+vagrant init ubuntu/trusty64
+
+vagrant up
+- возобновить машину из паузы, можно и vagrant up
+  vagrant resume
+  
 vagrant provision -- forces reprovisioning of the vagrant machine
 vagrant reload -- restarts vagrant machine, loads new Vagrantfile configuration
 vagrant reload --provision -- restart the virtual machine and force provisioning
