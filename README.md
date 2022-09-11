@@ -1,7 +1,6 @@
 vagrant -h
 
 vagrant init
-
 vagrant init ubuntu/trusty64
   
 Starting a VM
