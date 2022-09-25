@@ -36,4 +36,4 @@
 - `vagrant package`               -- запаковать запущенные боксы чтоб можно было переиспользовать
 
 # Сохранение состояния
--`vagrant snapshot save [options] [vm-name] <name>`
+- `vagrant snapshot save [options] [vm-name] <name>`
